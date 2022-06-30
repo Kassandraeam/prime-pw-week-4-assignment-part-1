@@ -83,18 +83,17 @@ console.log(str);
 console.log('Problem #7:');
 function find( value, array ){
   for (let i = 0; i<array.length; i++){
-    if (value == array[i]){
+    if (value === array[i]){
       console.log('true');
       return true;
-    } else {
-      console.log('false');
-      return false;
     }
-  }
+    }
+    console.log('false');
+    return false;
 }
 find(10, [1,2,3,4,5]); //should be false
-find(1, [1,2,3,4,5]); //should be true
-console.log(str);
+find(4, [1,2,3,4,5]); //should be true
+
 
 // ----------------------
 // Stretch Goals
